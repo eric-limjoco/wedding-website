@@ -36,3 +36,4 @@ typings/
 .sass-cache/
 *.css.map
 index-original.html
+.nosync
