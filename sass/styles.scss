@@ -897,6 +897,20 @@ RSVP form
 }
 
 /* ==========================================================================
+Hero 2
+========================================================================== */
+
+.hero-2 {
+  min-height: 750px;
+  background: url("../img/hero-min-2.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* ==========================================================================
 Footer
 ========================================================================== */
 footer {
