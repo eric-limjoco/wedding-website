@@ -690,7 +690,10 @@ Instagram
 Engagement Pics
 ========================================================================== */
 #eng-pics {
-  margin-top: 100px;
+  background-color: rgba(183, 209, 211, 0.3);
+  @media screen and (max-width: 500px) {
+    margin-top: 50px;
+  }
   img {
     width: 100%;
     height: auto;
@@ -902,7 +905,16 @@ Hero 2
 
 .hero-2 {
   min-height: 750px;
-  background: url("../img/hero-min-2.jpg") center center;
+  background: url("../img/eng_pics/eric_taha-116-min.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.photos-page-hero {
+  background: url("../img/eng_pics/eric_taha-115-min.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

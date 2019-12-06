@@ -54,7 +54,7 @@
         your experience.
       </p>
     <![endif]-->
-    <section class="hero">
+    <section class="hero photos-page-hero">
       <section class="navigation fixed">
         <header>
           <div class="header-content">
@@ -64,14 +64,8 @@
             <div class="header-nav">
               <nav>
                 <ul class="primary-nav">
-                  <!-- <li><a href="#intro">How we met</a></li> -->
-                  <li><a href="#events">Events</a></li>
+                  <li><a href="/">Home</a></li>
                   <!-- <li><a href="#instagram">Instagram</a></li> -->
-                  <li class="hidden-sm hidden-xs">
-                    <a href="#video-bg">Location</a>
-                  </li>
-                  <li><a href="#map">Venue</a></li>
-                  <li><a href="#eng-pics">Photos</a></li>
                 </ul>
                 <ul class="member-actions">
                   <!-- <li><a href="#map" class="login">Venue</a></li> -->
@@ -89,7 +83,7 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="hero-content text-center">
-              <!-- <h1>Eric &amp; Taha</h1> -->
+              <h1>Photos</h1>
               <!-- <img src="img/logo-lg.png" /> -->
               <!-- <p class="intro">Eric &amp; Taha are getting married!</p> -->
             </div>
@@ -103,189 +97,108 @@
           <div class="col-sm-4 hidden-xs"></div>
         </div>
       </div>
-      <div class="down-arrow floating-arrow">
-        <a href="#invitation"><i class="fa fa-angle-down"></i></a>
-      </div>
-    </section>
-
-    <section id="invitation" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h3>
-              Eric &amp; Taha are getting married!
-            </h3>
-            <p>
-              Come back here for updates!
-            </p>
-            <!-- <div class="share-bar"></div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="events section-padding" id="events">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="header">Events</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-            <div class="wp3">
-              <p><strong>Thursday, September 24th</strong></p>
-
-              <h5>Mehndi <span class="time">7PM</span></h5>
-              <p>
-                Join us for a night of good food, music & games.
-              </br>
-              <a>Location to be announced</a>
-            </br>
-                <!-- <a
-                  href="http://maps.google.com/?q=3205 D St, La Verne, CA 91750"
-                  target="_blank"
-                  >
-                  LaVerne United Methodist Church</br>3205 D St, La Verne, CA 91750
-                  </a> -->
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-            <div class="wp6">
-              <p><strong>Saturday, September 26th</strong></p>
-              <h5>Wedding <span class="time">5PM-12AM</span></h5>
-              <p>
-                The main event where we tie the knot.
-              </br>
-                <a
-                  href="#map"
-                  >Rancho Las Lomas</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row section-padding"></div>
-      </div>
-    </section>
-
-    <section id="video-bg" class="hidden-sm hidden-xs">
-      <div
-        id="bgndVideo"
-        class="player"
-        data-property="{videoURL:'https://youtu.be/b1ZWna4eZMI',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:16, stopAt:42, opacity:1}"
-      ></div>
-      <div id="video-content">
-        <h5>California</h5>
-        <p>Where Eric's from</p>
-      </div>
-    </section>
-
-    <section id="map" class="section-padding">
-      <div class="text-center">
-        <h3>The Venue</h3>
-        <p>How do I get there?</p>
-      </div>
-      <div id="map-canvas"></div>
-      <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-            <div class="text-center">
-              <div
-                id="btn-show-content"
-                class="toggle-map-content pointer-events-auto"
-              >
-                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show Venue
-                Information
-              </div>
-            </div>
-            <div id="map-content" class="pointer-events-auto">
-              <div class="row">
-                <div class="col-md-12">
-                  <h5>Rancho Las Lomas</h5>
-                  <p>
-                    <a
-                      href="http://maps.google.com/?q=19191 Lawrence Canyon, Silverado, CA 92676"
-                      target="_blank"
-                      >19191 Lawrence Canyon, Silverado, CA 92676</a
-                    >
-                  </br>
-                    <i class="fa fa-mobile"></i>
-                      <a href="tel://+9498883080">&nbsp;&nbsp;(949) 888-3080</a
-                      >
-                  </p>
-                </div>
-              </div>
-              <div class="row text-center">
-                <div class="col-md-12" style="padding: 5px;">
-                  <a
-                    class="btn btn-fill btn-small"
-                    href="http://maps.google.com/?q=19191 Lawrence Canyon, Silverado, CA 92676"
-                    target="_blank"
-                    ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Open in Google
-                    Maps</a
-                  >
-                </div>
-                <div class="col-md-12" style="padding: 5px;">
-                    <a
-                      class="btn btn-fill btn-small"
-                      href="https://m.uber.com/ul/?action=setPickup&client_id=cH7tav56wjSfT9Yxpi4fUcPVnDxTsJ0v&pickup=my_location&dropoff[nickname]=Rancho%20Las%20Lomas&dropoff[formatted_address]=19191%20Lawrence%20Canyon%2C%20Silverado%2C%20CA%2092676&dropoff[latitude]=33.68741&dropoff[longitude]=-117.6222"
-                      ><i class="fa fa-taxi"></i>&nbsp;&nbsp;Book an Uber</a
-                    >
-                </div>
-                <div class="col-md-12" style="padding: 5px;">
-                  <a class="btn btn-accent btn-small" id="btn-show-map"
-                    ><i class="fa fa-map"></i>&nbsp;&nbsp;Show map</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="eng-pics" class="section-padding">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3 class="header">Engagement Photos</h3>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-2-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
+                </div>
+                <img src="img/eng_pics/eric_taha-2-min.jpg" alt="" />
+              </div>
+            </a>
           </div>
-          <div class="row">
-            <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-34-min.jpg">
-                <div class="img-wrap">
-                  <div class="overlay">
-                    <i class="fa fa-search"></i>
-                  </div>
-                  <img src="img/eng_pics/eric_taha-34-min.jpg" alt="" />
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-13-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
                 </div>
-              </a>
-            </div>
-            <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-25-min.jpg">
-                <div class="img-wrap">
-                  <div class="overlay">
-                    <i class="fa fa-search"></i>
-                  </div>
-                  <img src="img/eng_pics/eric_taha-25-min.jpg" alt="" />
+                <img src="img/eng_pics/eric_taha-13-min.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-17-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
                 </div>
-              </a>
-            </div>
-            <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-13-min.jpg">
-                <div class="img-wrap">
-                  <div class="overlay">
-                    <i class="fa fa-search"></i>
-                  </div>
-                  <img src="img/eng_pics/eric_taha-13-min.jpg" alt="" />
+                <img src="img/eng_pics/eric_taha-17-min.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-25-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
                 </div>
-              </a>
-            </div>
+                <img src="img/eng_pics/eric_taha-25-min.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-34-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
+                </div>
+                <img src="img/eng_pics/eric_taha-34-min.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a
+              class="fancybox"
+              rel="group"
+              href="img/eng_pics/eric_taha-38-min.jpg"
+            >
+              <div class="img-wrap">
+                <div class="overlay">
+                  <i class="fa fa-search"></i>
+                </div>
+                <img src="img/eng_pics/eric_taha-38-min.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-12 text-center">
+            <p>
+              &nbsp;
+            </p>
+          </div>
+        </div>
+        <div class="row">
             <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-50-min.jpg">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-50-min.jpg"
+              >
                 <div class="img-wrap">
                   <div class="overlay">
                     <i class="fa fa-search"></i>
@@ -295,17 +208,53 @@
               </a>
             </div>
             <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-56-min.jpg">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-57-min.jpg"
+              >
                 <div class="img-wrap">
                   <div class="overlay">
                     <i class="fa fa-search"></i>
                   </div>
-                  <img src="img/eng_pics/eric_taha-56-min.jpg" alt="" />
+                  <img src="img/eng_pics/eric_taha-57-min.jpg" alt="" />
                 </div>
               </a>
             </div>
             <div class="col-md-2">
-              <a class="fancybox" rel="group" href="img/eng_pics/eric_taha-73-min.jpg">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-64-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-64-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-72-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-72-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-73-min.jpg"
+              >
                 <div class="img-wrap">
                   <div class="overlay">
                     <i class="fa fa-search"></i>
@@ -314,26 +263,122 @@
                 </div>
               </a>
             </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-74-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-74-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
             <div class="col-md-12 text-center">
-                <p>
-                  <small><a href="https://www.foreverphotony.com/" target="_blank">Courtesy of Forever Photography</a></small>
-                </p>
-              </div>
-          </div>
+              <p>
+                &nbsp;
+              </p>
+            </div>
         </div>
-        <div class="container">
-          <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-          </div>
+        <div class="row">
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-84-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-84-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-89-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-89-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-92-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-92-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-101-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-101-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-107-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-107-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="fancybox"
+                rel="group"
+                href="img/eng_pics/eric_taha-112-min.jpg"
+              >
+                <div class="img-wrap">
+                  <div class="overlay">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <img src="img/eng_pics/eric_taha-112-min.jpg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 text-center">
+              <p>
+                <small><a href="https://www.foreverphotony.com/" target="_blank">Courtesy of Forever Photography</a></small>
+              </p>
+            </div>
         </div>
-        <!--<div class="row">
-          <div class="col-md-12">
-              <div class="diamond floating-logo">
-                  <img src="img/sketch-logo.png" alt="Sketch Logo">
-                  <div class="ring"></div>
-              </div>
-          </div>
-      </div>-->
+      <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+          <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+      </div>
     </section>
 
     <section class="hero-2"></section>
