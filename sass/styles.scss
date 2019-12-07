@@ -828,11 +828,14 @@ Google map
 }
 
 /* ==========================================================================
-RSVP form
+Subscribe, RSVP form
 ========================================================================== */
+.subscribe,
 .rsvp {
   padding-bottom: 140px;
+  .subscribe-form,
   .rsvp-form {
+    .subscribe-btn,
     .rsvp-btn {
       padding: 15px 0;
       border-radius: 3px;
@@ -896,6 +899,15 @@ RSVP form
         color: $form-placeholder;
       }
     }
+  }
+}
+
+.subscribe {
+  background-color: rgba(169, 195, 182, 0.3);
+  padding-bottom: 40px;
+
+  h3 {
+    margin-top: 0;
   }
 }
 

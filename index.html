@@ -66,7 +66,6 @@
                 <ul class="primary-nav">
                   <!-- <li><a href="#intro">How we met</a></li> -->
                   <li><a href="#events">Events</a></li>
-                  <!-- <li><a href="#instagram">Instagram</a></li> -->
                   <li class="hidden-sm hidden-xs">
                     <a href="#video-bg">Location</a>
                   </li>
@@ -74,6 +73,7 @@
                   <li><a href="#eng-pics">Photos</a></li>
                 </ul>
                 <ul class="member-actions">
+                  <li><a href="#subscribe" class="btn-white btn-small">Subscribe</a></li>
                   <!-- <li><a href="#map" class="login">Venue</a></li> -->
                   <!-- <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li> -->
                 </ul>
@@ -124,44 +124,75 @@
       </div>
     </section>
 
-    <!-- <section id="intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3 class="header">How we met</h3>
+    <section class="subscribe text-center section-padding" id="subscribe">
+      <div id="subscribe-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span>&times;</span>
+              </button>
+              <div class="section-padding">
+                <h3>Thank you</h3>
+                <p>Check your email for updates!</p>
+                <!-- <div id="add-to-cal"></div> -->
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs">
-              <img src="img/eric.png" class="wp1" />
-            </div>
-            <div class="col-md-6">
-              <p>
-                I first saw Antara in the Fall of 2008 when we started our
-                undergrad. I was instantly attracted to her but was far too
-                nervous to speak to her. I had told my friend I liked her and news
-                had traveled fast and she soon found out. Her first reaction was
-                "Who is Ram?" and she began searching for me in the class. She
-                started to take notice of me and no matter how boring the lecture
-                was, we never missed a class after that. After a good few months I
-                finally plucked up the courage to ask her out and the rest is
-                history :)
-              </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs">
-              <img src="img/taha.png" class="wp2" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
-              <img src="img/eric.png" class="wp8" />
-            </div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
-              <img src="img/taha.png" class="wp9" />
-            </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h3>Stay Up To Date</h3>
+            <p>
+              Give us your email address and we'll keep you posted.
+            </p>
+            <form id="subscribe-form" class="subscribe-form" action="" method="POST">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-envelope"></i
+                    ><input
+                      type="email"
+                      name="email"
+                      class=""
+                      placeholder="Your email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-user"></i
+                    ><input
+                      name="name"
+                      class=""
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="alert-wrapper"></div>
+              </div>
+              <button class="btn-fill subscribe-btn">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-    </section> -->
+      </div>
+    </section>
     
     <section class="events section-padding" id="events">
       <div class="container">

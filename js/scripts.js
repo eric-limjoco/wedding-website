@@ -1,6 +1,5 @@
+/***************** Waypoints ******************/
 $(document).ready(function() {
-  /***************** Waypoints ******************/
-
   $(".wp1").waypoint(
     function() {
       $(".wp1").addClass("animated fadeInLeft");
@@ -109,7 +108,6 @@ $(document).ready(function() {
   });
 
   /***************** Header BG Scroll ******************/
-
   //   $(function() {
   //     $(window).scroll(function() {
   //       var scroll = $(window).scrollTop();
@@ -168,34 +166,34 @@ $(document).ready(function() {
   });
 
   /********************** Social Share buttons ***********************/
-  var share_bar = document.getElementsByClassName("share-bar");
-  var po = document.createElement("script");
-  po.type = "text/javascript";
-  po.async = true;
-  po.src = "https://apis.google.com/js/platform.js";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(po, s);
+  //   var share_bar = document.getElementsByClassName("share-bar");
+  //   var po = document.createElement("script");
+  //   po.type = "text/javascript";
+  //   po.async = true;
+  //   po.src = "https://apis.google.com/js/platform.js";
+  //   var s = document.getElementsByTagName("script")[0];
+  //   s.parentNode.insertBefore(po, s);
 
-  for (var i = 0; i < share_bar.length; i++) {
-    var html =
-      '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
-      'src="https://platform.twitter.com/widgets/tweet_button.html?url=' +
-      encodeURIComponent(window.location) +
-      "&amp;text=" +
-      encodeURIComponent(document.title) +
-      '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
-      'style="width:105px; height:21px;">' +
-      "</iframe>" +
-      '<iframe src="//www.facebook.com/plugins/like.php?href=' +
-      encodeURIComponent(window.location) +
-      '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
-      '<div class="g-plusone" data-size="medium"></div>';
+  //   for (var i = 0; i < share_bar.length; i++) {
+  //     var html =
+  //       '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
+  //       'src="https://platform.twitter.com/widgets/tweet_button.html?url=' +
+  //       encodeURIComponent(window.location) +
+  //       "&amp;text=" +
+  //       encodeURIComponent(document.title) +
+  //       '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
+  //       'style="width:105px; height:21px;">' +
+  //       "</iframe>" +
+  //       '<iframe src="//www.facebook.com/plugins/like.php?href=' +
+  //       encodeURIComponent(window.location) +
+  //       '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
+  //       '<div class="g-plusone" data-size="medium"></div>';
 
-    // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
+  //     // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
 
-    share_bar[i].innerHTML = html;
-    share_bar[i].style.display = "inline-block";
-  }
+  //     share_bar[i].innerHTML = html;
+  //     share_bar[i].style.display = "inline-block";
+  //   }
 
   /********************** Embed youtube video *********************/
   $(".player").YTPlayer();
@@ -232,7 +230,7 @@ $(document).ready(function() {
       end: new Date("Nov 29, 2017 00:00"),
 
       // Event Address
-      address: "Rancho Las Lomas, Silverado, CCA",
+      address: "Rancho Las Lomas, Silverado, CA",
 
       // Event Description
       description: "Eric & Taha are getting married."
@@ -240,6 +238,38 @@ $(document).ready(function() {
   });
 
   $("#add-to-cal").html(myCalendar);
+
+  /********************** Subscribe **********************/
+  $("#subscribe-form").on("submit", function(e) {
+    e.preventDefault();
+    var data = $(this).serialize();
+
+    $("#alert-wrapper").html(
+      alert_markup(
+        "info",
+        "<strong>Just a sec!</strong> We are saving your details."
+      )
+    );
+
+    $.post(
+      "https://script.google.com/macros/s/AKfycbyJoL-x7j1OG_W3aKK3A5l4ylI6e_JGmLmbNQiYqA/exec",
+      data
+    )
+      .done(function(data) {
+        console.log(data);
+        $("#alert-wrapper").html("");
+        $("#subscribe-modal").modal("show");
+      })
+      .fail(function(data) {
+        console.log(data);
+        $("#alert-wrapper").html(
+          alert_markup(
+            "danger",
+            "<strong>Sorry!</strong> There is some issue with the server. "
+          )
+        );
+      });
+  });
 
   /********************** RSVP **********************/
   $("#rsvp-form").on("submit", function(e) {
@@ -255,7 +285,7 @@ $(document).ready(function() {
 
     if (
       MD5($("#invite_code").val()) !== "b0e53b10c1f55ede516b240036b88f40" &&
-      MD5($("#invite_code").val()) !== "2ac7f43695eb0479d5846bb38eec59cc"
+      MD5($("#invite_code").val()) !== "5d64a84dc6ea8a9f666b2359a6d8a8c6"
     ) {
       $("#alert-wrapper").html(
         alert_markup(
@@ -265,7 +295,7 @@ $(document).ready(function() {
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec",
+        "https://script.google.com/macros/s/AKfycbxKuy_DfHW9rCucXgZceca0MgiR0gB0RuAo0ghz6jl6INAwfn6Z/exec",
         data
       )
         .done(function(data) {
@@ -288,7 +318,7 @@ $(document).ready(function() {
 
 /********************** Extras **********************/
 
-// Google map
+// Google Map
 function initMap() {
   var rll_loc = { lat: 33.68741, lng: -117.6222 };
   var map = new google.maps.Map(document.getElementById("map-canvas"), {
