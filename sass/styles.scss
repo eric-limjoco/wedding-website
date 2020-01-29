@@ -981,3 +981,17 @@ body.modal-open {
 .modal-body {
   padding: 25px;
 }
+
+/* ==========================================================================
+Footer
+========================================================================== */
+#invitation .invitation-logo {
+  margin-bottom: 40px;
+
+  img {
+    width: 300px;
+    @media only screen and (min-width: 990px) {
+      width: 400px;
+    }
+  }
+}
