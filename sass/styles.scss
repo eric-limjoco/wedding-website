@@ -800,7 +800,7 @@ Google map
 #map-content-wrapper {
   position: relative;
   margin-top: -502px;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 #map-content {
   margin-top: 40px;
@@ -993,5 +993,40 @@ Footer
     @media only screen and (min-width: 990px) {
       width: 400px;
     }
+  }
+}
+
+/* ==========================================================================
+Covid-19
+========================================================================== */
+a.covid19 {
+  color: rgba(216, 147, 153, 1);
+  font-weight: 700;
+}
+
+#covid19 {
+  background-color: rgba(216, 147, 153, 0.9);
+  // background-color: rgba(100, 110, 100, 1);
+  padding-bottom: 40px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+/* ==========================================================================
+Gifts
+========================================================================== */
+#gifts {
+  // background-color: rgba(216, 147, 153, 0.85);
+  background-color: rgba(100, 110, 100, 1);
+  padding-bottom: 40px;
+
+  p {
+    color: white;
   }
 }
