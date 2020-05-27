@@ -997,19 +997,20 @@ Footer
 }
 
 /* ==========================================================================
-Covid-19
+Change in Plans
 ========================================================================== */
-a.covid19 {
+a.change {
   color: rgba(216, 147, 153, 1);
   font-weight: 700;
 }
 
-#covid19 {
-  background-color: rgba(216, 147, 153, 0.9);
-  // background-color: rgba(100, 110, 100, 1);
+#change {
+  // background-color: rgba(216, 147, 153, 0.9);
+  background-color: rgba(100, 110, 100, 1);
   padding-bottom: 40px;
 
   h3 {
+    color: #fff;
     margin-top: 0;
   }
 
