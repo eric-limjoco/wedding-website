@@ -588,7 +588,10 @@ Features-stack
     border-right: solid 1px $keyline-color;
   }
   .rightcol {
-    padding-left: 100px;
+    padding-left: 15px;
+    @media screen and (min-width: 923px) {
+      padding-left: 100px;
+    }
   }
 
   .time {
