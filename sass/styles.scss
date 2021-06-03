@@ -580,9 +580,9 @@ Features-stack
 }
 
 /* ==========================================================================
-.events
+.info
 ========================================================================== */
-.events {
+.info {
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
@@ -691,7 +691,7 @@ Instagram
 Engagement Pics
 ========================================================================== */
 #eng-pics {
-  background-color: rgba(183, 209, 211, 0.3);
+  background-color: #aa8881;
   @media screen and (max-width: 500px) {
     margin-top: 50px;
   }
@@ -997,14 +997,15 @@ Footer
 }
 
 /* ==========================================================================
-Change in Plans
+RSVP
 ========================================================================== */
-a.change {
+a.change,
+a.rsvp {
   color: rgba(216, 147, 153, 1);
   font-weight: 700;
 }
 
-#change {
+#rsvp {
   // background-color: rgba(216, 147, 153, 0.9);
   background-color: rgba(100, 110, 100, 1);
   padding-bottom: 40px;
